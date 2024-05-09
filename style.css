@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* nav_bar_under_head_tag */
+
+.head {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: #009e5f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_nav {
+    margin-left: 45px;
+    width: 50%;  /*Adjust as per your image size */
+    height: 200%;/*Adjust as per your image size */
+    overflow: hidden;
+    position: relative;
+}
+    /* Style for the image */
+
+.left_nav img {
+    /* transition: transfrom 0.3s ease-in-out; */
+    height: 100px;
+    overflow: hidden;
+}
+ /* Enlarge image on scroll */
+ /*.left_nav:hover img{
+    margin-top: 5px;
+    /* transfrom: scale(1.1); /* change the scale factor as desired 
+  } */
+.right_nav {
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.right_nav a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.right_nav a :hover {
+    color: black;
+}
+/* main_tag */
+
+.main_div {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
+.left_main {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.left_main img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.left_main h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #009e5f;
+}
+
+.left_main input {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10% 20% 20% 26%;
+    background-color: white;
+    border: 3px solid #009e5f;
+    color: #009e5f;
+}
+
+.left_main:hover input {
+    color: white;
+    background-color: #009e5f;
+    animation: color-full 200ms ease-out forwards;
+}
+
+@keyframes color-full {
+    from {
+        background: linear-gradient(
+        to right, 
+        #009e5f 0%,
+        #009e5f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%; /*stretch the gradient twice the element width;*/
+        background-position: right; /*start color from right */
+    }
+    to {
+        background: linear-gradient(
+        to right, 
+        #009e5f 0%,
+        #009e5f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;
+        background-position: left;/* Animate color to fil from left */
+       }
+    }
+
+.right_main {
+    width: 70%;
+    height: 100%;
+    background-color: black;
+}
+
+.right_main img{
+    padding: 25% 0% 0% 45%;
+}
+
+.right_main {
+    background-image: url("https://www.7up.com/images/products/slider/7up_featured.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+}
+
+
+
+
+.new_simple_7up {
+    height: 900px;
+    background-image: url("https://www.7up.com//images/simple-7up/7up-simple-banner.jpg");
+}
+
+.new_simple_7up h1 {
+        color: white;
+        font-size: 70px;
+        padding: 0px 0px 10px 0px;
+}
+
+.new_simple_7up h3{
+    color: white;
+    font-size: 26px;
+    padding: 0px 0px 10px 0px;
+}
+
+.new_simple_7up input{
+    width: 200px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    border: 5px solid #009e5f;
+    color: #009e5f;
+}
+
+.new_simple_7up input:hover {
+    color:white;
+    background-color: #009e5f;
+    animation: color-fill 200ms ease-out forwards;
+}
+
+@keyframes color-full {
+    from {
+        background: linear-gradient(
+        to right, 
+        #009e5f 0%,
+        #009e5f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;/*stretch the gradient twice the element width;*/
+        background-position: right; /*start color from right */
+    }
+    to {
+        background: linear-gradient(
+        to right, 
+        #009e5f 0%,
+        #009e5f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;
+        background-position: left;/* Animate color to fill from left */
+       }
+ }
+
+.new_simple_7up {
+    padding: 20% 0% 0% 10%;
+}
+/* section_2 */
+/* cocktail_recipes */
+
+.container_1 {
+    text-align: center;
+}
+
+.cocktail_recipes .box {
+    background-image: url("https://www.7up.com/images/modules/module_cocktail.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    height: 650px;
+}
+
+.box {
+    padding: 300px 600px;
+}
+
+.container_1 a {
+    text-decoration: none;
+
+    color: white;
+}
+
+.box h2 {
+    padding: 25px;
+    background-color: #fe5887;
+}
+
+.box:hover h2 {
+    margin: -10px;
+    animation: one 2s forwards;
+}
+
+@keyframes one {
+    from {
+        background: linear-gradient(
+        to right, 
+        #fe5887 0%,
+        #fe5887 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;/*stretch the gradient twice the element width;*/
+        background-position: right; /*start color from right */
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    to {
+        background: linear-gradient(
+        to right, 
+        #fe5887 0%,
+        #fe5887 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;
+        background-position: left; /* Animate color to fill from left */
+        transform: translatex(0);
+        opacity: 1;
+       }
+ }
+  /* cooking_recipes */
+  /* section_3 */
+
+.container_2 {
+    text-align: center;
+}
+
+.cooking_recipes {
+    background-image: url("https://www.7up.com/images/modules/module_cooking.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+}
+
+.box_1 {
+    padding: 300px 600px;
+}
+
+.container_2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.box_1 h2{
+    padding: 25px;
+    background-color: #6ba13f;
+}
+
+.box_1:hover h2{
+    margin: -10px;
+    animation: tow 2s forwards;
+}
+
+@keyframes tow {
+    from {
+        background: linear-gradient(
+        to right, 
+        #6ba13f 0%,
+        #6ba13f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;/*stretch the gradient twice the element width;*/
+        background-position: right; /*start color from right */
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    to {
+        background: linear-gradient(
+        to right, 
+        #6ba13f 0%,
+        #6ba13f 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;
+        background-position: left;/* Animate color to fill from left */
+        transform: translatex(0);
+        opacity: 1;
+       }
+ }
+ /*cooking_recipes */
+ /* section_4 */
+
+ .container_3 {
+    text-align: center;
+ }
+
+ .see_all_recipes {
+    background-image: url("https://www.7up.com/images/modules/module_seeall.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+ }
+
+ .box_2 {
+    padding: 300px 600px;
+ }
+
+ .container_3 a {
+    text-decoration: none;
+    color: white;
+ }
+
+ .box_2 h2 {
+    padding: 25px;
+    background-color: #c064ac;
+ }
+
+ .box_2:hover h2 {
+    margin: -10px;
+    animation: three 2s forwards;
+ }
+
+ @keyframes three {
+    from {
+        background: linear-gradient(
+        to right, 
+        #c064ac 0%,
+        #c064ac 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;/*stretch the gradient twice the element width;*/
+        background-position: right; /*start color from right */
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    to {
+        background: linear-gradient(
+        to right, 
+        #c064ac 0%,
+        #c064ac 50%,
+        white 50%,
+        white 100%
+        );
+        background-size: 200% 100%;
+        background-position: left;/* Animate color to fill from left */
+        transform: translatex(0);
+        opacity: 1;
+       }
+ }
+/* section_drink_straight */
+
+.drink_straight {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.left_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left_side #one {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.left_side #one:hover img {
+    width: 195px;
+}
+
+.left_side #tow {
+    width: 50%;
+    height: 50%;
+    padding: 3px 5px 3px 0px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.left_side #tow:hover img{
+    height: 410px;
+    padding-right: 50%;
+}
+
+.left_side #three {
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+.left_side #three:hover img {
+    width: 190px;
+}
+
+.left_side #four {
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    text-align: center;
+    /* background-color: green; */
+}
+
+.left_side #four:hover img {
+    width: 210px;
+}
+
+.left_side img {
+    padding: 5px;
+}
+
+.right_side {
+    width: 50%;
+    height: 100%;
+    background: #ececec;
+}
+
+.right_top  {
+    padding: 100px 100px 69px 100px;
+}
+
+.right_side .right_top h1 {
+    display: flex;
+    position: relative;
+    font-size: 90px;
+    color: #009e5f;
+}
+
+.right_side .right_top span {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    color: red;
+}
+
+.right_side .right_top p {
+    font-size: 20px;
+    color: rgba(38, 37, 37, 0.488);
+}
+
+.right_bottom img {
+    width: 600px;
+    padding: 0px 100px;
+}
+
+footer {
+    width: 100%;
+    height: 800px;
+    padding-top: 25px;
+    background-image: url("https://www.7up.com/images/footer-bg.jpg");
+    background-size: cover;
+}
+
+.text {
+    width: 500px;
+    height: 50px;
+    margin: 8% 50%;
+}
+
+.text h1 {
+    text-align: center;
+    background-color: red;
+    transform: matrix(1, -0.4513, 0, 1, 21.8691, 152.353);
+    font-size: 80px;
+    color: white;
+}
+.over_the_footer {
+    margin-left: 250px;
+    margin-top: 400px;
+    width: 70%;
+    height: 150px;
+    background-color: rgba(245, 245, 245, 0.658);
+}
+ 
+.footer {
+    margin: 5px;
+}
+
+.first_line {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.first_line a{
+    text-decoration: none;
+    color: #636363;
+    
+    padding: 0px 5px;
+    font-size: 25px;
+}
+
+.middle_line {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.middle_line a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #636363;
+    padding: 0px 5px;
+}
+
+.last_line {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    color: #636363;
+}
